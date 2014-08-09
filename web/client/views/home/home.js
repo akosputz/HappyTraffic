@@ -4,6 +4,7 @@ Template.home.events = {
 
 
         var item = {
+            userId: Meteor.userId(),
             plate: $('.plate').val(),
             feedbackType: $("#like").prop("checked")
         };
@@ -23,6 +24,10 @@ Template.home.events = {
         });
 
     }
+}
+
+Template.home.recordCount = function(){
+    return Reports.find({userId: Meteor.userId()}).count();
 }
 
 
