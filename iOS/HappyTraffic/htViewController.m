@@ -14,6 +14,9 @@
 
 @end
 
+//static const NSString *kUrl = @"http://happytraffic.meteor.com";
+static const NSString *kUrl = @"http://localhost:3000";
+
 @implementation htViewController
 
 - (void)viewDidLoad
@@ -21,7 +24,7 @@
     [super viewDidLoad];
     
     self._webView.delegate = self;
-    [self._webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://happytraffic.meteor.com"]]];
+    [self._webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kUrl]]];
 }
 
 - (void)didReceiveMemoryWarning
