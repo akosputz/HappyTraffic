@@ -23,6 +23,13 @@
 		706512A91996A1310090F424 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706512881996A1300090F424 /* UIKit.framework */; };
 		706512B11996A1310090F424 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 706512AF1996A1310090F424 /* InfoPlist.strings */; };
 		706512B31996A1310090F424 /* HappyTrafficTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 706512B21996A1310090F424 /* HappyTrafficTests.m */; };
+		70EE0D0C19971EE700CD9531 /* DazFire.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D0519971EE700CD9531 /* DazFire.png */; };
+		70EE0D0D19971EE700CD9531 /* DazSmoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D0619971EE700CD9531 /* DazSmoke.png */; };
+		70EE0D0E19971EE700CD9531 /* DazHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D0719971EE700CD9531 /* DazHeart.png */; };
+		70EE0D0F19971EE700CD9531 /* DazFlake.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D0819971EE700CD9531 /* DazFlake.png */; };
+		70EE0D1019971EE700CD9531 /* DazStarOutline.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D0919971EE700CD9531 /* DazStarOutline.png */; };
+		70EE0D1119971EE700CD9531 /* DazTriangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D0A19971EE700CD9531 /* DazTriangle.png */; };
+		70EE0D1219971EE700CD9531 /* DazRing.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D0B19971EE700CD9531 /* DazRing.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,13 @@
 		706512AE1996A1310090F424 /* HappyTrafficTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HappyTrafficTests-Info.plist"; sourceTree = "<group>"; };
 		706512B01996A1310090F424 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		706512B21996A1310090F424 /* HappyTrafficTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappyTrafficTests.m; sourceTree = "<group>"; };
+		70EE0D0519971EE700CD9531 /* DazFire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazFire.png; sourceTree = "<group>"; };
+		70EE0D0619971EE700CD9531 /* DazSmoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazSmoke.png; sourceTree = "<group>"; };
+		70EE0D0719971EE700CD9531 /* DazHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazHeart.png; sourceTree = "<group>"; };
+		70EE0D0819971EE700CD9531 /* DazFlake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazFlake.png; sourceTree = "<group>"; };
+		70EE0D0919971EE700CD9531 /* DazStarOutline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazStarOutline.png; sourceTree = "<group>"; };
+		70EE0D0A19971EE700CD9531 /* DazTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazTriangle.png; sourceTree = "<group>"; };
+		70EE0D0B19971EE700CD9531 /* DazRing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazRing.png; sourceTree = "<group>"; };
 		C8DA9C89676E414D99B81DE6 /* Pods-HappyTraffic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyTraffic.xcconfig"; path = "Pods/Pods-HappyTraffic.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +134,13 @@
 		7065128A1996A1300090F424 /* HappyTraffic */ = {
 			isa = PBXGroup;
 			children = (
+				70EE0D0519971EE700CD9531 /* DazFire.png */,
+				70EE0D0619971EE700CD9531 /* DazSmoke.png */,
+				70EE0D0719971EE700CD9531 /* DazHeart.png */,
+				70EE0D0819971EE700CD9531 /* DazFlake.png */,
+				70EE0D0919971EE700CD9531 /* DazStarOutline.png */,
+				70EE0D0A19971EE700CD9531 /* DazTriangle.png */,
+				70EE0D0B19971EE700CD9531 /* DazRing.png */,
 				706512931996A1300090F424 /* htAppDelegate.h */,
 				706512941996A1300090F424 /* htAppDelegate.m */,
 				706512961996A1300090F424 /* Main_iPhone.storyboard */,
@@ -243,8 +264,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EE0D0C19971EE700CD9531 /* DazFire.png in Resources */,
+				70EE0D1119971EE700CD9531 /* DazTriangle.png in Resources */,
+				70EE0D1019971EE700CD9531 /* DazStarOutline.png in Resources */,
+				70EE0D0F19971EE700CD9531 /* DazFlake.png in Resources */,
 				7065129B1996A1300090F424 /* Main_iPad.storyboard in Resources */,
+				70EE0D1219971EE700CD9531 /* DazRing.png in Resources */,
 				706512A01996A1300090F424 /* Images.xcassets in Resources */,
+				70EE0D0E19971EE700CD9531 /* DazHeart.png in Resources */,
+				70EE0D0D19971EE700CD9531 /* DazSmoke.png in Resources */,
 				706512981996A1300090F424 /* Main_iPhone.storyboard in Resources */,
 				7065128F1996A1300090F424 /* InfoPlist.strings in Resources */,
 			);
