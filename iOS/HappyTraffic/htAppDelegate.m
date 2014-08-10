@@ -7,12 +7,26 @@
 //
 
 #import "htAppDelegate.h"
+#import <Venmo-iOS-SDK/Venmo.h>
+
+static NSString* kVENMO_APP_ID = @"1881";
+static NSString* kVENMO_APP_SECRET = @"YWRqZj5RvMaUhMjJ9V2JRAJCAHfqHvpv";
+static NSString* kVENMO_APP_NAME = @"HappyTraffic";
 
 @implementation htAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [Venmo startWithAppId:kVENMO_APP_ID secret:kVENMO_APP_SECRET name:kVENMO_APP_NAME];
+    
+    // using API method always because the appswitch method reveals the other's email address. not nice.
+    if (1) { //  && ![Venmo isVenmoAppInstalled]) {
+        [[Venmo sharedInstance] setDefaultTransactionMethod:VENTransactionMethodAPI];
+    }
+    else {
+        [[Venmo sharedInstance] setDefaultTransactionMethod:VENTransactionMethodAppSwitch];
+    }
+    
     return YES;
 }
 							
@@ -41,6 +55,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    if ([[Venmo sharedInstance] handleOpenURL:url]) {
+        return YES;
+    }
+    // You can add your app-specific url handling code here if needed
+    return NO;
 }
 
 @end
