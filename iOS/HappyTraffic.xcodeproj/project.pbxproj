@@ -30,6 +30,8 @@
 		70EE0D1019971EE700CD9531 /* DazStarOutline.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D0919971EE700CD9531 /* DazStarOutline.png */; };
 		70EE0D1119971EE700CD9531 /* DazTriangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D0A19971EE700CD9531 /* DazTriangle.png */; };
 		70EE0D1219971EE700CD9531 /* DazRing.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D0B19971EE700CD9531 /* DazRing.png */; };
+		70EE0D16199730FB00CD9531 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D15199730FB00CD9531 /* background.png */; };
+		70EE0D1819973B1600CD9531 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EE0D1719973B1600CD9531 /* background2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		70EE0D0919971EE700CD9531 /* DazStarOutline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazStarOutline.png; sourceTree = "<group>"; };
 		70EE0D0A19971EE700CD9531 /* DazTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazTriangle.png; sourceTree = "<group>"; };
 		70EE0D0B19971EE700CD9531 /* DazRing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazRing.png; sourceTree = "<group>"; };
+		70EE0D15199730FB00CD9531 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		70EE0D1719973B1600CD9531 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 		C8DA9C89676E414D99B81DE6 /* Pods-HappyTraffic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyTraffic.xcconfig"; path = "Pods/Pods-HappyTraffic.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,8 @@
 		7065128A1996A1300090F424 /* HappyTraffic */ = {
 			isa = PBXGroup;
 			children = (
+				70EE0D15199730FB00CD9531 /* background.png */,
+				70EE0D1719973B1600CD9531 /* background2.png */,
 				70EE0D0519971EE700CD9531 /* DazFire.png */,
 				70EE0D0619971EE700CD9531 /* DazSmoke.png */,
 				70EE0D0719971EE700CD9531 /* DazHeart.png */,
@@ -266,6 +272,7 @@
 			files = (
 				70EE0D0C19971EE700CD9531 /* DazFire.png in Resources */,
 				70EE0D1119971EE700CD9531 /* DazTriangle.png in Resources */,
+				70EE0D16199730FB00CD9531 /* background.png in Resources */,
 				70EE0D1019971EE700CD9531 /* DazStarOutline.png in Resources */,
 				70EE0D0F19971EE700CD9531 /* DazFlake.png in Resources */,
 				7065129B1996A1300090F424 /* Main_iPad.storyboard in Resources */,
@@ -275,6 +282,7 @@
 				70EE0D0D19971EE700CD9531 /* DazSmoke.png in Resources */,
 				706512981996A1300090F424 /* Main_iPhone.storyboard in Resources */,
 				7065128F1996A1300090F424 /* InfoPlist.strings in Resources */,
+				70EE0D1819973B1600CD9531 /* background2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +479,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HappyTraffic/HappyTraffic-Prefix.pch";
 				INFOPLIST_FILE = "HappyTraffic/HappyTraffic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -489,6 +498,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HappyTraffic/HappyTraffic-Prefix.pch";
 				INFOPLIST_FILE = "HappyTraffic/HappyTraffic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
