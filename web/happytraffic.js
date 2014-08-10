@@ -16,4 +16,17 @@ Router.map(function () {
 
     this.route('list');
     this.route('rate');
+    this.route('desc');
+    this.route('sent');
 });
+
+Router.configure({
+    load: function() {
+        $('body').animate({
+            left: "-1000px",
+            scrollTop: 0
+        }, 400, function() {
+            $(this).animate({ left: "0px" }, 400);
+        });
+    }
+    });

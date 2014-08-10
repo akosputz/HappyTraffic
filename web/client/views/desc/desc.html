@@ -1,0 +1,26 @@
+<template name="desc">
+    <div class="tac" style="margin: 30px 0">
+        <span class="to">To:</span>
+        <span class="rate-plate" style="font-size: 40px;">{{plate}}</span>
+    </div>
+
+    <span style="margin: 20px 10px 0 10px;
+font-size: 20px;
+color: grey;">
+
+   <span class="description" style="font-weight: bold; margin-left: 10px;">Description</span><i style="opacity: 0.5"> (optional)</i></span>
+    <div>
+
+        <div class="list-block">
+            <textarea id="textareadesc" style="margin: 20px; border: 3px solid #e4e4e4; border-radius: 3px; width: 280px; background-color: #e4e4e4" name="desc"  cols="30" rows="10" placeholder="How about using your blinker? :)"></textarea>
+        </div>
+
+
+
+    </div>
+
+    <div class="tac">
+        <button id="rate-back" data-pack="default mobile-btn" class="mobile-btn" style="margin-right: 25px"> <i class="ion-arrow-left-c"></i> Back</button>
+        <button id="desc-honk" data-pack="default mobile-btn" class="mobile-btn ion-speakerphone"> Honk</button>
+    </div>
+</template>

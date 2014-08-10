@@ -1,5 +1,5 @@
 <template name="home">
-    <div style="margin-bottom: 50px; display: none">
+    <div style="margin-bottom: 50px;">
     Your Plate: <input type="text" id="setplate"/> <button type="button" id="setplatebutton">Set my plate</button>
     </div>
 
@@ -12,24 +12,13 @@
         <input type="text" class="plate" placeholder="ABC 123"/>
     </div>
 
-<<<<<<< HEAD
-    <div style="display: none">
-=======
-    <input type="text" class="plate" placeholder="plate" autocorrect="off" autocapitalization="off"/>
-    <div>
->>>>>>> FETCH_HEAD
-     <input type="radio" name="feedback" id="like" value="like">Like<br>
-     <input type="radio" name="feedback" id="dislike" value="dislike">Dislike
-    </div>
-
     <h2 style="display: none">Count: {{recordCount}}</h2>
-
 
     <div class="buttons" style="text-align: center;">
         <button  data-pack="default" class="ion-speakerphone mobile-btn" id="send"> Honk</button>
     </div>
-    <div class="msg-ph badged" style="text-align: center; margin-top: 140px;">
-        <span class="icon ion-model-s"><span>1</span></span><br/>
-        <span class="msg-txt grey">No messages</span>
+    <div class="msg-ph" style="text-align: center; margin-top: 170px;">
+        <span class="icon ion-model-s"><span class="counter">1</span></span><br/>
+        <span class="msg-txt grey" style="margin-top: 10px;">No messages</span>
     </div>
 </template>
