@@ -16,13 +16,13 @@ Router.map(function () {
 
     this.route('list');
     this.route('rate');
-<<<<<<< HEAD
+
     this.route('desc');
     this.route('sent');
-=======
+
     this.route('paymentsuccessful');
     this.route('paymentfailed');
->>>>>>> FETCH_HEAD
+
 });
 
 Router.configure({
