@@ -1,11 +1,12 @@
-Template.home.events = {
+Template.rate.events = {
 
-    'click input#send': function(e, instance){
 
+    'click #rate-submit':function(e){
 
         var item = {
             userId: Meteor.userId(),
-            plate: $('.plate').val(),
+            plateId: Meteor.user().profile.plateId,
+            plate: Session.get("plateNumber"),
             feedbackType: $("#like").prop("checked")
         };
 
@@ -22,14 +23,10 @@ Template.home.events = {
                 Router.go('/list');
             }
         });
-
     }
+
 }
 
-Template.home.recordCount = function(){
-    return Reports.find({userId: Meteor.userId()}).count();
+Template.rate.plate = function(){
+    return Session.get("plateNumber");
 }
-
-
-
-

@@ -1,0 +1,51 @@
+<template name="rate">
+    <div class="tac" style="margin: 30px 0">
+        <span class="to">To:</span>
+        <span class="rate-plate">{{plate}}</span>
+    </div>
+
+    <span style="margin: 20px 10px 0 10px;
+font-size: 20px;
+color: grey;
+    ">Choose type</span>
+    <div>
+
+        <div class="list-block">
+            <ul>
+                <li>
+                    <label class="label-radio item-content">
+                        <input type="radio" name="ks-radio" value="Books" checked="checked"/>
+                        <div class="item-inner">
+                            <div class="ion-sad item-title">   Complain</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="label-radio item-content">
+                        <input type="radio" name="ks-radio" value="Movies"/>
+                        <div class="item-inner">
+                            <div class="ion-alert item-title">        Notify</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="label-radio item-content">
+                        <input type="radio" name="ks-radio" value="Food"/>
+                        <div class="item-inner">
+                            <div class="ion-happy item-title">   Compliment</div>
+                        </div>
+                    </label>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+    </div>
+
+    <div class="tac">
+        <button id="rate-back" data-pack="default mobile-btn" class="mobile-btn" style="margin-right: 50px"> <i class="ion-arrow-left-c"></i> Back</button>
+        <button id="rate-next" data-pack="default mobile-btn" class="mobile-btn" >Next <i class="ion-arrow-right-c"></i> </button>
+    </div>
+</template>

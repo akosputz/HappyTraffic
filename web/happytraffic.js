@@ -15,4 +15,5 @@ Router.map(function () {
     });
 
     this.route('list');
+    this.route('rate');
 });

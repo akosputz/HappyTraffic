@@ -1,17 +1,30 @@
 <template name="home">
+    <div style="margin-bottom: 50px; display: none">
+    Your Plate: <input type="text" id="setplate"/> <button type="button" id="setplatebutton">Set my plate</button>
+    </div>
 
-    {{> loginButtons }}
+    <div style="float: right">
+    {{> loginButtons align="right"}}
+    </div>
 
-    <h1>Happy Traffic!</h1>
+    <div class="plate-holder">
+        <div class="title">Plate No.:</div>
+        <input type="text" class="plate" placeholder="ABC 123"/>
+    </div>
 
-    <input type="text" class="plate" placeholder="plate"/>
-    <div>
+    <div style="display: none">
      <input type="radio" name="feedback" id="like" value="like">Like<br>
      <input type="radio" name="feedback" id="dislike" value="dislike">Dislike
     </div>
 
-    <h2>Count: {{recordCount}}</h2>
+    <h2 style="display: none">Count: {{recordCount}}</h2>
 
 
-    <input type="button" id="send" value="Send" />
+    <div class="buttons" style="text-align: center;">
+        <button  data-pack="default" class="ion-speakerphone mobile-btn" id="send"> Honk</button>
+    </div>
+    <div class="msg-ph badged" style="text-align: center; margin-top: 140px;">
+        <span class="icon ion-model-s"><span>1</span></span><br/>
+        <span class="msg-txt grey">No messages</span>
+    </div>
 </template>

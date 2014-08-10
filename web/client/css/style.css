@@ -1,0 +1,93 @@
+body {
+    width: 320px;
+}
+.tac {
+    text-align: center;
+}
+.plate {
+    padding: 14px;
+    font-size: 26px;
+    width: 120px;
+}
+
+.plate-holder {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.title {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.mobile-btn {
+    display: inline-block;
+    padding: 12px 16px;
+    border: 2px solid #4F8EF7;
+    border-radius: 4px;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+
+    color: #4F8EF7;
+    text-decoration: none;
+    opacity: .7;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.mobile-btn:hover {
+    opacity: 1;
+    background: #4F8EF7;
+    color: white;
+}
+
+.icon {
+    font-size: 30px;
+    opacity: 0.4;
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 13px 15px;
+    margin-bottom: 5px;
+}
+
+.icon span{
+    display: none;
+    position: absolute;
+    top: -11px;
+    right: -7px;
+    padding: 3px 9px;
+    border-radius:100px;
+    background: #ff0000;
+    font:bold 16px/20px "Helvetica Neue", sans-serif;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+}
+
+.badged .icon {
+    opacity: 0.9;
+}
+
+.badged .icon span {
+    display: block;
+}
+
+.badged .msg-txt {
+    display: none;
+}
+
+.grey {
+    color: grey;
+}
+
+.iconic {
+    font-size: 30px;
+}

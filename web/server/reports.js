@@ -28,5 +28,9 @@ Meteor.methods({
 
         return report;
 
+    },
+
+    updatePlate: function(plateNum) {
+        Meteor.users.update(Meteor.userId(), {$set: {'profile.plateId': plateNum}});
     }
 });
