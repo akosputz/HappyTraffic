@@ -8,7 +8,8 @@ Template.desc.events = {
         plateId: Meteor.user().profile.plateId,
         plate: Session.get("plateNumber"),
         feedbackType: Session.get("type"),
-        desc: $('#textarea-desc').val()
+        desc: $('#textareadesc').val(),
+        date: new Date()
     };
 
 
@@ -19,9 +20,13 @@ Template.desc.events = {
         }else{
             console.log("new report", {'reportId': report.reportId});
 
-            Router.go('/');
+            Router.go('/sent');
         }
     });
+  },
+
+  'click #desc-back':function(e){
+        window.history.back()
   }
 
 }

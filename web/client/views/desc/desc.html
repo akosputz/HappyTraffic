@@ -1,7 +1,12 @@
 <template name="desc">
-    <div class="tac" style="margin: 30px 0">
-        <span class="to">To:</span>
-        <span class="rate-plate" style="font-size: 40px;">{{plate}}</span>
+    <div class="header" style="height: 55px; background-color: rgb(211, 148, 148);;width: 100%; position: absolute; top: 0">
+        <div class="logo ion-speakerphone" style="margin-top: 25px;
+margin-left: 10px;
+font-weight: bold;
+color: #444;">  HONK</div>
+    </div>
+    <div class="tac" style="margin: 85px 0 40px 0">
+        <span class="rate-plate" style="padding: 5px 8PX;font-size: 40px; color: #555555; border: 3px solid #555; border-radius: 3px;;">{{plate}}</span>
     </div>
 
     <span style="margin: 20px 10px 0 10px;
@@ -20,7 +25,12 @@ color: grey;">
     </div>
 
     <div class="tac">
-        <button id="rate-back" data-pack="default mobile-btn" class="mobile-btn" style="margin-right: 25px"> <i class="ion-arrow-left-c"></i> Back</button>
+        <button id="desc-back" data-pack="default mobile-btn" class="mobile-btn" style="margin-right: 25px"> <i class="ion-arrow-left-c"></i> Back</button>
         <button id="desc-honk" data-pack="default mobile-btn" class="mobile-btn ion-speakerphone"> Honk</button>
     </div>
+    <style>
+        textarea:active {
+            background-color: white;
+        }
+    </style>
 </template>

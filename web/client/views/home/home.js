@@ -18,21 +18,27 @@ Template.home.events = {
     'click #send': function(e, instance){
         Session.set('plateNumber', $('.plate').val());
         Router.go('/rate');
+    },
+
+
+    'click .badged': function(e, instance){
+        Router.go('/list');
     }
 }
 
 
-
+Meteor.startup(function () {
 Template.home.recordCount = function(){
     if(Meteor.user()){
         var a = Reports.find({plate: Meteor.user().profile.plateId}).count();
 
         if(a > 0){
             $('.msg-ph').addClass('badged');
-            $('.msg-ph').find('.counter').val(a) ;
+            $('.msg-ph').find('.counter').html(a) ;
         }
     }
 }
+});
 
 
 

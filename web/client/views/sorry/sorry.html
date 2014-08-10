@@ -1,0 +1,26 @@
+<template name="sorry">
+    <div class="header" style="height: 55px; background-color: rgb(211, 148, 148);;width: 100%; position: absolute; top: 0">
+        <div class="logo ion-speakerphone" style="margin-top: 25px;
+margin-left: 10px;
+font-weight: bold;
+color: #444;">  HONK</div>
+    </div>   <div style="float: right">
+    {{> loginButtons align="right"}}
+    </div>
+
+    <div style="margin-top: 65px;text-align: center">
+        <h1>Sorry</h1>
+        <h2>my bad.</h2>
+
+        <span>Thanks for the feedback.</span>
+
+        <h1>$1</h1>
+    </div>
+
+    <div class="buttons tac" style="margin-top: 40px">
+        <span class="back"  style="margin-right: 30px; cursor: pointer">Back</span>
+        <button id="sorry-pay" data-pack="default mobile-btn" class="mobile-btn"> <i class="ion-card"></i> Pay</button>
+    </div>
+
+
+</template>

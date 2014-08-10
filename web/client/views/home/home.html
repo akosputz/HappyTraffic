@@ -1,5 +1,13 @@
 <template name="home">
-    <div style="margin-bottom: 50px;">
+
+    <div class="header" style="height: 55px; background-color: rgb(211, 148, 148);;width: 100%; position: absolute; top: 0">
+        <div class="logo ion-speakerphone" style="margin-top: 25px;
+margin-left: 10px;
+font-weight: bold;
+color: #444;">  HONK</div>
+    </div>
+
+    <div style="margin-bottom: 50px; display: none">
     Your Plate: <input type="text" id="setplate"/> <button type="button" id="setplatebutton">Set my plate</button>
     </div>
 
@@ -8,24 +16,22 @@
     </div>
 
     <div class="plate-holder">
-        <div class="title">Plate No.:</div>
-        <input type="text" class="plate" placeholder="ABC 123"/>
+        <input type="text" autocorrect="off" autocapitalize="off" class="plate" placeholder="Plate Number"/>
     </div>
 
-<<<<<<< HEAD
-=======
+
     <div style="display: none">
      <input type="radio" name="feedback" id="like" value="like">Like<br>
      <input type="radio" name="feedback" id="dislike" value="dislike">Dislike
     </div>
 
->>>>>>> FETCH_HEAD
+
     <h2 style="display: none">Count: {{recordCount}}</h2>
 
     <div class="buttons" style="text-align: center;">
         <button  data-pack="default" class="ion-speakerphone mobile-btn" id="send"> Honk</button>
     </div>
-    <div class="msg-ph" style="text-align: center; margin-top: 170px;">
+    <div class="msg-ph" style="text-align: center; margin-top: 70px;">
         <span class="icon ion-model-s"><span class="counter">1</span></span><br/>
         <span class="msg-txt grey" style="margin-top: 10px;">No messages</span>
     </div>

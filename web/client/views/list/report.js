@@ -1,3 +1,3 @@
-/**
- * Created by nemethzsolt on 8/9/14.
- */
+Template.report.date = function(){
+    return moment(this.date).format("ddd, hA");
+}

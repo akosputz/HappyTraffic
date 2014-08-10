@@ -1,9 +1,15 @@
 Template.rate.events = {
 
 
+    'click button':function(e, item){
 
-    'click #rate-next':function(e){
-        Session.set('type', $('input[name=ks-radio]:checked').val())
+        var a = e.target;
+        if(a.id == ""){
+             a = $(e.target).parent();
+        }
+
+
+        Session.set('type', $(a).attr('data-icon'))
         Router.go('/desc');
     }
 

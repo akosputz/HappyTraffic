@@ -1,0 +1,28 @@
+<template name="detail">
+    <div class="header" style="height: 55px; background-color: rgb(211, 148, 148);;width: 100%; position: absolute; top: 0">
+        <div class="logo ion-speakerphone" style="margin-top: 25px;
+margin-left: 10px;
+font-weight: bold;
+color: #444;">  HONK</div>
+    </div>   <div style="float: right">
+    {{> loginButtons align="right"}}
+</div>
+
+    <h2 style="margin-top: 80px; text-align: center" id="icon-title" class="{{feedbackType}}" data-pack="default">{{title}}</h2>
+
+    <div class="date tac" style="font-style: italic">{{momentdate}}</div>
+    <div class="desc tac" style="margin-top: 40px; min-height: 150px;">
+        <p>
+            {{desc}}
+        </p>
+    </div>
+
+    <div class="buttons tac" style="margin-top: 40px">
+        <span data-pack="default" class="back" style="cursor: pointer; margin-right: 25px; font-size: 22px"> <i class="ion-arrow-left-c"></i> Back</span>
+        {{#if isthanks}}
+        <button id="detail-thanks" data-pack="default mobile-btn" class="mobile-btn"> <i class="ion-icecream"></i> Say Thanks</button>
+        {{else}}
+        <button id="detail-sorry" data-pack="default mobile-btn" class="mobile-btn"> <i class="ion-icecream"></i> Say Sorry</button>
+        {{/if}}
+    </div>
+</template>

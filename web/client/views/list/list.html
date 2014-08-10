@@ -1,6 +1,16 @@
 
 <template name="list">
-    <div class="list section grey center">
+
+    <div class="header" style="height: 55px; background-color: rgb(211, 148, 148);;width: 100%; position: absolute; top: 0">
+        <div class="logo ion-speakerphone" style="margin-top: 25px;
+margin-left: 10px;
+font-weight: bold;
+color: #444;">  HONK</div>
+    </div>
+    <div style="float: right">
+        {{> loginButtons align="right"}}
+    </div>
+    <div class="list section grey center" style="margin: 80px 10px 20px 10px">
         {{#each reports}}
             {{>report}}
         {{/each}}

@@ -4,7 +4,8 @@
     "basePackages": {
       "iron-router": {},
       "ionicons": {},
-      "iron-transitioner": {}
+      "iron-transitioner": {},
+      "moment": {}
     },
     "packages": {
       "iron-router": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/percolatestudio/iron-transitioner.git",
         "tag": "v0.1.0",
         "commit": "4a5db7d9c7e212d8784b86aa833334e619bb4bd3"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",

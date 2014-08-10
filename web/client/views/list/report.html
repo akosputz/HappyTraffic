@@ -1,10 +1,12 @@
 <template name="report">
     <div class="report-item">
         <div class="report-cont">
-            <div>UserId: {{userId}}</div>
-            Plate :<span  class="report-title">{{plate}}</span> <br/>
-            Feedback:  <span>{{feedbackType}}</span>
-            <br/><br/>
+            <span style="font-size: 30px" class="{{feedbackType}}" id="title" data-pack="default"> </span>
+            <a class="report-title" style="	text-overflow: ellipsis;
+	width: 180px;
+	white-space: nowrap;
+	overflow: hidden; display: inline-block;" href="/detail/{{_id}}">{{desc}}</a>
+            <span style="vertical-align: super;">{{date}}</span>
         </div>
     </div>
 </template>

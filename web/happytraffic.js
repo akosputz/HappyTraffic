@@ -23,15 +23,13 @@ Router.map(function () {
     this.route('paymentsuccessful');
     this.route('paymentfailed');
 
+    this.route('detail', {
+        // get parameter via this.params
+        path: '/detail/:_id',
+        data: function() { return Reports.findOne(this.params._id); }
+    });
+
+    this.route('sorry');
+
 });
 
-Router.configure({
-    load: function() {
-        $('body').animate({
-            left: "-1000px",
-            scrollTop: 0
-        }, 400, function() {
-            $(this).animate({ left: "0px" }, 400);
-        });
-    }
-    });

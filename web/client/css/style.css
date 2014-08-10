@@ -4,22 +4,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 720px;
-    background-position-x: -21px;
 }
 .tac {
     text-align: center;
 }
 .plate {
     padding: 14px;
-    font-size: 26px;
-    width: 120px;
+    font-size: 14px;
+    width: 92px;
     border-radius: 4px;
     border: none;
 }
 
 .plate-holder {
     text-align: center;
-    margin: 50px 0 20px 0;
+    margin: 120px 0 20px 0;
 }
 
 .title {
@@ -81,9 +80,11 @@ body {
 
 .badged .icon {
     opacity: 0.9;
+    cursor: pointer;;
 }
 
 .badged .icon span {
+    cursor: pointer;
     display: block;
 }
 .msg-txt {
@@ -104,4 +105,31 @@ body {
 
 .list-block {
     margin-top: 10px !important;
+}
+
+
+.login-link-text {
+    color: #444;
+}
+#login-buttons {
+    margin-top: 30px;
+    margin-right: 5px;
+}
+#login-buttons a, .accounts-dialog a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.list .ion-alert:before {
+    content: "\f101";
+    width: 26px;
+    text-align: center;
+    color: rgb(175, 175, 43);
+}
+
+.list .ion-happy:before {
+    color: rgb(25, 139, 38);
+}
+.list .ion-sad:before {
+color:rgb(182, 18, 58)
 }
