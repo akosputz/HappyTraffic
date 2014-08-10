@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-HappyTraffic-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HappyTraffic-SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HappyTraffic-VENCore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HappyTraffic-Venmo-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HappyTraffic.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>54ECDD7B159E46B5BFBCF5D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F33DAA432D44ADAB2A06251</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7642E38734C546D39D878913</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B20AE55000FB49C3A131AE35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D6463FBB1ADA40B38EB3C34F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
