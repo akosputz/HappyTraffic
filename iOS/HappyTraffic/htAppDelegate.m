@@ -9,9 +9,12 @@
 #import "htAppDelegate.h"
 #import <Venmo-iOS-SDK/Venmo.h>
 
-static NSString* kVENMO_APP_ID = @"1881";
-static NSString* kVENMO_APP_SECRET = @"YWRqZj5RvMaUhMjJ9V2JRAJCAHfqHvpv";
-static NSString* kVENMO_APP_NAME = @"HappyTraffic";
+//static NSString* kVENMO_APP_ID = @"1881";
+//static NSString* kVENMO_APP_SECRET = @"YWRqZj5RvMaUhMjJ9V2JRAJCAHfqHvpv";
+//static NSString* kVENMO_APP_NAME = @"HappyTraffic";
+static NSString* kVENMO_APP_ID = @"1882";
+static NSString* kVENMO_APP_SECRET = @"yKp3WGNyKLq6uuZh7FnXNgtN2v2H4rHP";
+static NSString* kVENMO_APP_NAME = @"Honk";
 
 @implementation htAppDelegate
 

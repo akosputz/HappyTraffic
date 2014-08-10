@@ -19,6 +19,9 @@
 static NSString *kUrl = @"http://happytraffic.meteor.com/pay?email=peter.perlay@gmail.com";
 //static const NSString *kUrl = @"http://localhost:3000";
 
+static NSString *kUrlTransactionSuccess = @"http://happytraffic.meteor.com/paymentsuccessful";
+static NSString *kUrlTransactionFailed = @"http://happytraffic.meteor.com/paymentfailed";
+
 @implementation htViewController
 
 - (void)viewDidLoad
@@ -77,15 +80,18 @@ static NSString *kUrl = @"http://happytraffic.meteor.com/pay?email=peter.perlay@
                                                               audience:VENTransactionAudiencePrivate 
                                                      completionHandler:^(VENTransaction *transaction, BOOL success, NSError *error) {
                                                          if (success) {
-                                                             NSLog(@"Transaction succeeded!");
+                                                             NSLog(@"Transaction succeeded");
+                                                             [self._webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kUrlTransactionSuccess]]];
                                                          }
                                                          else {
-                                                             NSLog(@"Transaction failed with error: %@", [error localizedDescription]);
+                                                             NSLog(@"Transaction failed: %@", error);
+                                                             [self._webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kUrlTransactionFailed]]];
                                                          }
                                                      }];
                              }
                              else {
-                                 return;
+                                 NSLog(@"Transaction denied: %@", error);
+                                 [self._webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kUrlTransactionFailed]]];
                              }
                          }];
     
