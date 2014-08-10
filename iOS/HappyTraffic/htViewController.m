@@ -12,12 +12,13 @@
 @interface htViewController ()
 @property (strong, nonatomic) IBOutlet UIWebView *_webView;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *_progressView;
+@property (strong, nonatomic) IBOutlet UIImageView *_imageView;
 
 @property (strong, nonatomic) CAEmitterLayer *fireworksEmitter;
 @end
 
-//static NSString *kUrl = @"http://happytraffic.meteor.com";
-static NSString *kUrl = @"http://localhost:3000/paymentsuccessful";
+static NSString *kUrl = @"http://happytraffic.meteor.com";
+//static NSString *kUrl = @"http://localhost:3000/paymentsuccessful";
 //static NSString *kUrl = @"http://happytraffic.meteor.com/pay?email=peter.perlay@gmail.com";
 //static const NSString *kUrl = @"http://localhost:3000";
 
@@ -31,7 +32,10 @@ static NSString *kUrlTransactionFailed = @"http://happytraffic.meteor.com/paymen
     [super viewDidLoad];
     
     self._webView.delegate = self;
+    self._webView.scrollView.scrollEnabled = NO;
     [self._webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kUrl]]];
+    self.view.layer.contents = (id)[UIImage imageNamed:@"background2.png"].CGImage;
+    self._webView.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,6 +53,13 @@ static NSString *kUrlTransactionFailed = @"http://happytraffic.meteor.com/paymen
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [self._progressView stopAnimating];
+    if (self._webView.hidden) {
+        self._webView.alpha = 0.0;
+        self._webView.hidden = NO;
+        [UIView animateWithDuration:0.5 animations:^() {
+            self._webView.alpha = 1.0;
+        }];
+    }
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
